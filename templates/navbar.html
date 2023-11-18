@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main2.css')}}">
+    <script src="https://kit.fontawesome.com/030af201e4.js" crossorigin="anonymous"></script>
+    <title>Galata Çaycısı</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script></head>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='icon.jpg')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="back"></div>
+    <!--Navbar Only-->
+    <div class="navbar">
+        <a href="/"><img src="{{url_for('static', filename='icon.png')}}"text-align=middle></a>
+    </div>
+
+    <div class="menu">
+        <div class="menuitems"><a style="text-decoration: none;" href="/kahvaltı"><span class="link"></span><span class="material-symbols-outlined">egg_alt</span><h5>Kahvaltılar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/tost"><span class="link"></span><span class="material-symbols-outlined">breakfast_dining</span><h5>Tostlar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/hamburger"><span class="link"></span><span class="material-symbols-outlined">lunch_dining</span><h5>Hamburger</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/pizza"><span class="link"></span><span class="material-symbols-outlined">local_pizza</span><h5>Pizzalar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/makarna"><span class="link"></span><span class="material-symbols-outlined">ramen_dining</span><h5>Makarnalar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/salata"><span class="link"></span><img src="{{url_for('static', filename='salad.png')}}"text-align=middle><h5 id="hh5_2">Salatalar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/yemek"><span class="link"></span><span class="material-symbols-outlined">restaurant</span><h5>Ana Yemek</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/tatlı"><span class="link"></span><span class="material-symbols-outlined">brunch_dining</span><h5>Tatlılar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/waffle"><span class="link"></span><i class="fa-solid fa-stroopwafel"></i><h5>Waffle'lar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/sıcak_içecek"><span class="link"></span><span class="material-symbols-outlined">local_cafe</span><h5>Sıcak içecekler</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/bitki"><span class="link"></span><span class="material-symbols-outlined">emoji_food_beverage</span><h5>Bitki Çayları</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/sıcak_kahve"><span class="link"></span><span class="material-symbols-outlined">coffee_maker</span><h5>Sıcak Kahveler</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/soğuk_içecek"><span class="link"></span><span class="material-symbols-outlined">specific_gravity</span><h5>Soğuk İçecek</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/vitamin"><span class="link"></span><span class="material-symbols-outlined">grocery</span><h5>Vitamin Bar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/meşrubat"><span class="link"></span><span class="material-symbols-outlined">local_drink</span><h5>Meşrubatlar</h5></a></div>
+        <div class="menuitems"><a style="text-decoration: none;" href="/nargile"><span class="link"></span><img src="{{url_for('static', filename='hookah.png')}}"text-align=middle><h5 id="hh5">Nargileler</h5></a></div>
+    </div>
+
+    {% block body %}
+
+    {% endblock %}
+</body>
+</html>

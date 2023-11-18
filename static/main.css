@@ -1,0 +1,96 @@
+/* CSS Document */
+@media screen and (max-width: 767px){ 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+	font-family: 'PLay', sans-serif;
+    background:linear-gradient(to bottom,#BBD2C5,#536976,#292E49);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BBD2C5), to(#292E49)) fixed;
+}
+
+.navbar img{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    width: 195px;
+    height: 195px;
+}
+
+.menu{
+    position: absolute;
+    top: 17%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.menuitems{
+    position: relative;
+    border-radius: 20%;
+    margin: 3%;
+    flex: 15%;
+    background-color: #536976;
+    border: 0.15vmax solid #536976;
+    box-shadow: 0.2vmax 0.2vmax 0.2vmax #536976;
+}
+
+.menuitems span {
+    position: relative;
+    left: 30%;
+    top: 22.5%;
+    text-align: center;
+    font-size: 300%;
+    color: #BBD2C5;
+}
+
+.menuitems i {
+    position: relative;
+    left: 30%;
+    text-align: center;
+    top: 22.5%;
+    font-size: 300%;
+    color: #BBD2C5;
+}
+.menuitems h5{
+    position: relative;
+    top: 35%;
+    text-align: center;
+    font-size: 110%;
+    color: #BBD2C5;
+}
+
+.menuitems img{
+    position: relative;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+}
+
+#hh5{
+    position: absolute;
+    left: 17.5%;
+    top: 80%;
+}
+
+#hh5_2{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+}
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+}

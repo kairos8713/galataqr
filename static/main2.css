@@ -1,0 +1,109 @@
+/* CSS Document */
+@media screen and (max-width: 767px){ 
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    
+    body {
+        font-family: 'PLay', sans-serif;
+        background: #C18653;
+        
+
+    }
+    .navbar{
+        top: 0%;
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        background-color: #2F5663;
+    }
+    .navbar img{
+        position: absolute;
+        top: 0%;
+        left: 35%;
+        width: 195px;
+        height: 195px;
+        filter: drop-shadow(0.10px 0.10px 3px white);
+        z-index: 300000000;
+    }
+    
+    .menu{
+        background-color: #2F5663;
+        position: absolute;
+        top: 17%;
+        left: 0%;
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        border-bottom: #C18653 2px solid ;
+        box-shadow:inset 0 -90px 90px -90px#C18653;
+    }
+    
+    .menuitems{
+        position: relative;
+        border-top-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        margin: 3%;
+        flex: 15%;
+        background: #C18653;
+        border: 0.15vmax solid #C18653;
+    }
+    
+    .menuitems span {
+        position: relative;
+        left: 30%;
+        top: 20%;
+        text-align: center;
+        font-size: 300%;
+        color: #D8B188;
+    }
+    
+    .menuitems i {
+        position: relative;
+        left: 30%;
+        text-align: center;
+        top: 20%;
+        font-size: 300%;
+        color: #D8B188;
+    }
+    .menuitems h5{
+        position: relative;
+        top: 25%;
+        text-align: center;
+        font-size: 110%;
+        color: #383B38;
+    }
+    
+    .menuitems img{
+        position: relative;
+        top: 15%;
+        left: 25%;
+        width: 50%;
+        opacity: 0.78;
+    }
+    
+    #hh5{
+        position: absolute;
+        left: 17.5%;
+        top: 80%;
+    }
+    
+    #hh5_2{
+        position: absolute;
+        left: 20%;
+        top: 80%;
+    }
+    .link{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    }

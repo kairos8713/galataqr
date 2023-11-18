@@ -1,0 +1,111 @@
+{% extends "navbara.html" %}
+{% block body %}
+<div class="container">
+<form action="/add/{{add}}" method = "post">
+    <div class="form-group">
+            <label style="margin: 1%; font-size: 150%;">Ürün Ekle</label><br>
+            <input type="text" class="form-control" name = "isim" placeholder="Ürün İsimi Giriniz...">
+            <input type="text" class="form-control" name = "fiyat" placeholder="Ürün Fiyatı Giriniz..."><button type = "submit" class="btn">Ekle</button><br>
+            <input type="text" class="form-control" name = "text" placeholder="Ürün Açıklaması Giriniz...">
+
+    </div>
+    <hr>
+</form>
+{% if ürünler == [] %}
+<div class="alert alert-warning" role="alert">
+        Herhangi bir ürününüz bulunmuyor...
+</div>
+{% else %}
+          {% for ürün in ürünler %}
+          <ul class="liste">
+                <li class="li1">{{ürün.isim}}</li>
+                <li class="li1">{{ürün.fiyat}}</li>
+                <li class="li2">{{ürün.text}}</li>
+                <a class="btn li1" href="/delete/{{add}}/{{ürün.id}}">Sil</a>
+                <form action="/change/{{add}}/{{ürün.id}}" method = "post">
+                            <label style="margin: 1%; font-size: 150%;">Fiyat Değiştir</label>
+                            <input type="text" class="form-control" name = "fiyat" placeholder="Ürün Fiyatı Giriniz..."><button type = "submit" class="btn">Değiştir</button>
+                </form>
+          </ul>
+          {% endfor %}
+{% endif %}
+</div>
+
+<style>
+    .container{
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background-color: #C18653;
+    }
+    .btn{
+        text-decoration: none;
+        padding: 3%;
+        background-color: #D8B188;
+        border: 2px solid #2F5663;
+        margin-left: 2%;
+        border-radius: 20%;
+        color: #2F5663;
+    }
+    .btn:hover{
+        background-color: #2F5663;
+        border: 2px solid #D8B188;
+        color: #D8B188;
+    }
+    .form-group{
+        display: block;
+        position: relative;
+        width: 90%;
+        left: 10%;
+    }
+    .form-control{
+        position: relative;
+        display: inline-block;
+        width: 20%;
+        padding: 2%;
+        line-height: 2%;
+        background-color: #2F5663;
+        color: #D8B188;
+        margin: 1%;
+        font-size: 110%;
+        margin-bottom: 3%;
+        border-radius: 10%;
+        margin-left: 0%;
+    }
+    .form-control:last-child{
+        width: 50%;
+        margin-bottom: 10%;
+    }
+    .liste{
+        display: block;
+        position: relative;
+        top: 2%;
+        left: 3%;
+        width: 90%;
+        padding-bottom: 2%;
+        margin-bottom: 5%;
+        border-bottom: #383B38 2px solid;
+    }
+    .li1{
+        position: relative;
+        display: inline-block;
+        font-size: 1.9em;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        color: #383B38;
+    }
+    .li2{
+        position: relative;
+        display: block;
+        font-size: 1.4em;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        color: #383B38;
+    }
+    .li1:nth-child(2){
+        padding-left: 3%;
+        border-left: 2px solid #D8B188;
+        color: #D8B188;
+    }
+</style>
+{% endblock body %}
